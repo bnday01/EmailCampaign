@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Simple HTML Email Creater</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<!-- This does not send emails, it simply handles the creation of the emails -->
+	<h1>Email Tool</h1>
+	<form id="form1" action="" method="post" enctype="text/plain">
+		<label for="name" class="sText">Name:</label>
+		<input id="Name" class="textField" type="text" name="name" autocomplete="true" placeholder="Your Name Here">
+		<label for="subject" class="sText">Subject:</label>
+		<input id="Subject" class="textField" type="text" placeholder="Subject Here"> 
+		<label for="email" class="sText">Email:</label>
+		<input id="Email" class="textField" type="email" name="email" placeholder="Your Email Here">
+		<label for="date" class="sText">Date:</label>
+		<input id="Date" class="textField" type="date" name="date">
+		<label for="message" class="sText">Message:</label>
+		<textarea id="Message" name="message" placeholder="Type Your Message Here"></textarea>	
+		<button type="submit">Send</button>
+	
+	</form>		
+
+	<script type="text/javascript" src="script.js"></script>
+
+</body>
+</html> 
