@@ -12,6 +12,17 @@ fs.readFile('./views/index.html', "utf8", function (err, data){
  }
  else{
 	htmlTemplate = data;
+    const placeholders = data.match(/\s*{{.+}}\s*/gi);
+    const variables = [];
+
+    if (variables[0]){
+      for (let i = 0; i < placeholders.length; i++ ){
+        const regex = new RegExp (placeholders[i],"g");
+        data = data.replace(regex, variables[i]);
+      }
+    }
+  console.log(placeholders);
+  return data;
 	}	
 });
 
